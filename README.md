@@ -135,23 +135,23 @@ df = df |>
 projecttable = df |>
   group_by(fdi_group) |>
   summarize(
-    mean_gdp_growth = mean(gdp_growth, na.rm = TRUE),
-    median_gdp_growth = median(gdp_growth, na.rm = TRUE),
-    sd_gdp_growth = sd(gdp_growth, na.rm = TRUE),
-    min_gdp_growth = min(gdp_growth, na.rm = TRUE),
-    max_gdp_growth = max(gdp_growth, na.rm = TRUE),
+     mean_gdp_growth = mean(gdp_growth, na.rm = TRUE),
+     median_gdp_growth = median(gdp_growth, na.rm = TRUE),
+     sd_gdp_growth = sd(gdp_growth, na.rm = TRUE),
+     min_gdp_growth = min(gdp_growth, na.rm = TRUE),
+     max_gdp_growth = max(gdp_growth, na.rm = TRUE),
     
-    mean_fdi = mean(fdi, na.rm = TRUE),
-    median_fdi = median(fdi, na.rm = TRUE),
-    sd_fdi = sd(fdi, na.rm = TRUE),
-    min_fdi = min(fdi, na.rm = TRUE),
-    max_fdi = max(fdi, na.rm = TRUE),
-    
-    mean_sme = mean(sme, na.rm = TRUE),
-    median_sme = median(sme, na.rm = TRUE),
-    sd_sme = sd(sme, na.rm = TRUE),
-    min_sme = min(sme, na.rm = TRUE),
-    max_sme = max(sme, na.rm = TRUE)
+     mean_fdi = mean(fdi, na.rm = TRUE),
+     median_fdi = median(fdi, na.rm = TRUE),
+     sd_fdi = sd(fdi, na.rm = TRUE),
+     min_fdi = min(fdi, na.rm = TRUE),
+     max_fdi = max(fdi, na.rm = TRUE),
+     
+     mean_sme = mean(sme, na.rm = TRUE),
+     median_sme = median(sme, na.rm = TRUE),
+     sd_sme = sd(sme, na.rm = TRUE),
+     min_sme = min(sme, na.rm = TRUE),
+     max_sme = max(sme, na.rm = TRUE)
   )
 
 #Export table
